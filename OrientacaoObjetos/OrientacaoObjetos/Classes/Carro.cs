@@ -31,6 +31,7 @@ namespace OrientacaoObjetos.Classes
 
         public void Acelerar()
         {
+            // Teste
             Console.WriteLine($"O {Modelo} está acelerando normalmente :)");
         }
 

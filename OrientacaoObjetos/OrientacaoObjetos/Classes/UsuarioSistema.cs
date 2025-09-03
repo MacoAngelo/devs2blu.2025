@@ -13,6 +13,7 @@ namespace OrientacaoObjetos.Classes
 
         public void Logar(string user, string password)
         {
+            // Teste
             UserInfo usuarioSelecionado = null;
             foreach (var userInfo in UserInfo.AllUsers)
             {

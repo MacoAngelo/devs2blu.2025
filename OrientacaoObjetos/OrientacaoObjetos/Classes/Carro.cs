@@ -31,11 +31,13 @@ namespace OrientacaoObjetos.Classes
 
         public void Acelerar()
         {
+            // Teste
             Console.WriteLine($"O {Modelo} está acelerando normalmente :)");
         }
 
         public void Acelerar(int pedal)
         {
+            // Teste
             if (pedal <= 5)
             {
                 Console.WriteLine($"O {Modelo} está acelerando lentamente");

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira página</title>
+</head>
+<style>
+/* form {
+    background-color: rgb(220, 243, 235);
+    color: red;
+}*/
+
+    input{
+        display: block;
+        color: blue;
+    } 
+</style>
+<script>
+    
+
+    function validarSenha () {
+        let valor = document.getElementById('txtNome').value;
+
+        if (valor.length < 8) {
+            console.log('Senha ruim')
+        }
+        else {
+            console.log('Senha boa')
+        }
+        // console.log(document.getElementById('txtNome').value)
+    }
+
+    //campoNome.addEventListener('change', validarSenha)
+</script>
+<body>
+    <!-- <header style="background-color: blue; width: 100px; height: 100px;"></header>
+    <aside style="background-color: green; width: 100px; height: 100px;"></aside>
+    <main style="background-color: red; width: 100px; height: 100px;"></main>
+    <footer style="background-color: yellow; width: 100px; height: 100px;"></footer> -->
+
+    <!-- <ol>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ol> -->
+
+    <!-- <dl>
+        <dt>Texto 1</dt>
+        <dd>Descrição 1</dd>
+        <dt>Texto 2</dt>
+        <dd>Descrição 2</dd>
+    </dl> -->
+
+    <!-- <table>
+        <caption>Tabela de carros</caption>
+        <thead>
+            <tr>
+            <th>Nome</th>
+            <th>Ano</th>
+            <th>Cor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Celta</td>
+                <td>2008</td>
+                <td>Preto</td>
+            </tr>
+            <tr>
+                <td>Fusca</td>
+                <td>1976</td>
+                <td>Branco</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total de carros</td>
+                <td>2</td>
+            </tr>
+        </tfoot>
+    </table> -->
+
+    <form method="post" action="http://localhost/formulario">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label id="lbNome" for="txtNome">Nome</label>
+            <input id="txtNome" onchange="validarSenha()" name="nome" type="text" required placeholder="Nome do bonito">
+            <label for="txtSobrenome">Sobrenome</label>
+            <input id="txtSobrenome" name="sobrenome" type="text" readonly>
+            <label for="txtEmail">Email</label>
+            <input id="txtEmail" name="email" type="email">
+            <label for="ckAtivo">Usuário Ativo</label>
+            <input id="ckAtivo" name="ativo" type="checkbox">
+            <label for="nrDependentes">Quantidade de dependentes</label>
+            <input id="nrDependentes" name="quantidadeDependentes" type="number">
+                        <label for="dtNascimento">Data de nascimento</label>
+            <input id="dtNascimento" name="dataNascimento" type="date">
+            <label for="flPagamento">Folha de pagamento</label>
+            <input type="file" name="folhaPagamento" id="flPagamento">
+            
+            <!-- <label for=""></label>
+            <input id="" name="" type=""> -->
+        </fieldset>
+        <fieldset>
+            <legend>Tipo acesso</legend>
+            <input type="radio" name="acesso" id="rdAcessoAdmin" value="admin">
+            <label for="rdAcessoAdmin">Administrador</label>
+            <input type="radio" name="acesso" id="rdAcessoTeacher" value="teacher">
+            <label for="rdAcessoTeacher">Professor</label>
+            <input type="radio" name="acesso" id="rdAcessoStudent" value="student">
+            <label for="rdAcessoStudent">Estudante</label>
+        </fieldset>
+        
+        <input type="reset" value="Resetar">
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>

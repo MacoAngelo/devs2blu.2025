@@ -1,0 +1,34 @@
+.form {
+    width: 60vw;
+    height: 50vh;
+    background-color: rgb(235, 238, 240);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form__rows {
+    height: 100%;
+}
+
+.row {
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.row label {
+    margin: 8px;
+}
+
+.row input {
+    width: 100%;
+}
+
+.form__commands {
+    gap: 8px;
+    padding: 16px;
+    display: flex;
+    align-self: flex-end;
+    justify-self: end;
+}

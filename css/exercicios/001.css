@@ -1,0 +1,22 @@
+h1{
+        color: red;
+        font-size: 36px;
+    }
+
+    h3 {
+        background-color: yellow;
+        font-weight: bold;
+    }
+
+    h2 {
+        font-family: cursive;
+    }
+
+    h4 {
+        font-style: italic;
+        background-color: lightgrey;
+    }
+
+    h1, h2 {
+        color: green;
+    }

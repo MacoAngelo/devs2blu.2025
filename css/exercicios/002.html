@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 02</title>
+    <link rel="stylesheet" href="./002/inputStyle.css">
+    <link rel="stylesheet" href="./002/buttonsStyle.css">
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(109, 187, 121);
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+
+<body>
+    <form class="form" action="http://localhost/teste" method="post">
+        <div class="form__rows">
+            <div class="row">
+                <label for="txtNome">Nome</label>
+                <input type="text" name="nome" id="txtNome">
+            </div>
+            <div class="row">
+                <label for="dtNascimento">Data de nascimento</label>
+                <input type="date" name="dataNascimento" id="dtNascimento">
+            </div>
+            <div class="row">
+                <label for="txtCpf">CPF</label>
+                <input type="text" name="cpf" id="txtCpf">
+            </div>
+        </div>
+
+
+        <div class="form__commands">
+            <button class="btn primary">Salvar</button>
+            <button class="btn secondary">Editar</button>
+            <button class="btn danger">Excluir</button>
+        </div>
+    </form>
+</body>
+
+</html>
